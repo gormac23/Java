@@ -1,4 +1,4 @@
-package com.gormac23
+package com.gormac23;
 
 // Primitive Type Lesson
 public class ByteShortIntLong {
