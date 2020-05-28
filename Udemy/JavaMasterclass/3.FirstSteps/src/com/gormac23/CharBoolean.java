@@ -5,7 +5,7 @@ public class CharBoolean {
     public static void main(String[] args) {
 
         // Character
-        // stores a single character. or unicode
+        // stores a single character or unicode
         char myChar = 'D';
         char unicodeChar = '\u0044';
         System.out.println(myChar);

@@ -17,6 +17,8 @@ public class FloatDouble {
         System.out.println("Double Min Val = " + myMinDoubleValue);
         System.out.println("Double Max  Val = " + myMaxDoubleValue);
 
+        // When decalring floats and doubles,
+        // it is good practise to use 'f' and 'd' respectively
         float myFloatVal = 5.25f;
         float myOtherFloatVal = (float) 5.25;
         double myDoubleVal = 5.25;

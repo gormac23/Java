@@ -2,6 +2,7 @@ package com.gormac23;
 
 public class StringDataType {
 
+    // String is technically a class, hence thte capital 'S'
     public static void main(String[] args) {
 
         // String is a 'string' of characters. It can be used to store lines of text/numbers etc.
@@ -20,5 +21,6 @@ public class StringDataType {
         // NOTE: Strings have a 'higher priority'. It will convert int to text. A cast would be needed to add 10 + 50 here
 
         // Strings are immutable
+        // cannot be changed. a new String must be created
     }
 }

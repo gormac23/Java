@@ -6,7 +6,7 @@ public class FloatChallenge {
     public static void main(String[] args) {
 
         double pounds = 200d;
-        double kilograms = 200 * 0.45359237;
+        double kilograms = pounds * 0.45359237;
 
         System.out.println(pounds + "lbs in kilograms = "+ kilograms + "kg");
 

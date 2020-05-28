@@ -2,6 +2,7 @@ package com.gormac23;
 
 public class PrimitiveChallenge {
 
+    // Simple test of using proper Primitive types
     public static void main(String[] args) {
 
         byte byteVal = 5;

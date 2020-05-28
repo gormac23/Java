@@ -8,8 +8,8 @@ public class ByteShortIntLong {
         // Integer
         int myMinIntValue = Integer.MIN_VALUE;
         int myMaxIntValue = Integer.MAX_VALUE;
-        System.out.println("Integer Min Val = " + myMinIntValue);
-        System.out.println("Integer Max  Val = " + myMaxIntValue);
+        System.out.println("Integer Min Value = " + myMinIntValue);
+        System.out.println("Integer Max  Value = " + myMaxIntValue);
 
         System.out.println("Overflow = " + (myMinIntValue + 1));
         System.out.println("Underflow = " + (myMaxIntValue - 1));
@@ -17,14 +17,14 @@ public class ByteShortIntLong {
         // Byte
         byte minByteValue = Byte.MIN_VALUE;
         byte maxByteValue = Byte.MAX_VALUE;
-        System.out.println("Byte Min Val = " + minByteValue);
-        System.out.println("Byte Max  Val = " + maxByteValue);
+        System.out.println("Byte Min Value = " + minByteValue);
+        System.out.println("Byte Max  Value = " + maxByteValue);
 
         // Short
         short minShortValue = Short.MIN_VALUE;
         short maxShortValue = Short.MAX_VALUE;
-        System.out.println("Short Min Val = " + minShortValue);
-        System.out.println("Short Max  Val = " + maxShortValue);
+        System.out.println("Short Min Value = " + minShortValue);
+        System.out.println("Short Max  Value = " + maxShortValue);
 
         // Long
         // NOTE: long values need a L at the end
@@ -32,8 +32,8 @@ public class ByteShortIntLong {
 
         long minLongValue = Long.MIN_VALUE;
         long maxLongValue = Long.MAX_VALUE;
-        System.out.println("Long Min Val = " + minLongValue);
-        System.out.println("Long Max  Val = " + maxLongValue);
+        System.out.println("Long Min Value = " + minLongValue);
+        System.out.println("Long Max  Value = " + maxLongValue);
 
         // Casting Types
         byte newByteVal = (byte)(maxByteValue / 2);

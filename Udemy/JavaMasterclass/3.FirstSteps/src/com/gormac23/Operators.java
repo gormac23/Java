@@ -29,5 +29,14 @@ public class Operators {
         //result = result - 1
         result --;
         System.out.println("Result -- = " + result);
+
+        // NOTE: result++ and ++result are different.
+        // placement of this unary operator is important
+        // result++ does the operation after the variable
+        //
+        // EXAMPLE
+        // int result = 10;
+        // System.out.println(result++); Outputs 10 then assigns result = 11
+        // System.out.println(++result); Outputs 11 then assigns result = 11
     }
 }

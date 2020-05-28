@@ -21,6 +21,11 @@ public class LogicalOperators {
         if (!isTopScore) {
             System.out.println("Not the top score");
         }
+        // You can shorten boolean expressions by using the variable name itself as the comparrison
+        // this works for true and false...
+        // instead of using isTopScore == true or false etc.
+        // just use isTopScore or !isTopScore, as seen above
+
         // Greater-than Operator
         int newScore = 150;
         if (newScore > 100) {
