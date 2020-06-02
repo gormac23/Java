@@ -20,16 +20,16 @@ public class Methods {
         //create calculateHighScorePostion and displayHighScore methods
 
         int highScorePosition = calculateHighScorePosition(1500);
-        displayHighScorePosition("Waluigi",     (highScorePosition));
+        displayHighScorePosition("Waluigi", highScorePosition);
 
         highScorePosition = calculateHighScorePosition(900);
-        displayHighScorePosition("Mario", (highScorePosition));
+        displayHighScorePosition("Mario", highScorePosition);
 
         highScorePosition = calculateHighScorePosition(400);
-        displayHighScorePosition("Luigi", (highScorePosition));
+        displayHighScorePosition("Luigi", highScorePosition);
 
         highScorePosition = calculateHighScorePosition(50);
-        displayHighScorePosition("Wario", (highScorePosition));
+        displayHighScorePosition("Wario", highScorePosition);
 
     }
 
