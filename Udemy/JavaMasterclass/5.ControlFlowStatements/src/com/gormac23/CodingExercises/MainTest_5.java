@@ -27,5 +27,43 @@ public class MainTest_5 {
         System.out.println(Exercise_13_NumberOfDaysInMonth.getDaysInMonth(1, -2020));
 
 
+        //EXERCISE 14: SumOddRange
+        System.out.println("\nEXERCISE 14: SumOddRange");
+        System.out.println(Exercise_14_SumOddRange.sumOdd(1, 100));
+        System.out.println(Exercise_14_SumOddRange.sumOdd(-1, 100));
+        System.out.println(Exercise_14_SumOddRange.sumOdd(100, 100));
+        System.out.println(Exercise_14_SumOddRange.sumOdd(13, 13));
+        System.out.println(Exercise_14_SumOddRange.sumOdd(100, 1000));
+
+
+        //EXERCISE 15: NumberPalindrome
+        System.out.println("\nEXERCISE 15: NumberPalindrome");
+        System.out.println(Exercise_15_NumberPalindrome.isPalindrome(-1221));
+        System.out.println(Exercise_15_NumberPalindrome.isPalindrome(707));
+        System.out.println(Exercise_15_NumberPalindrome.isPalindrome(21));
+
+
+        //EXERCISE 16: FirstLastDigitSum
+        System.out.println("\nEXERCISE 16: FirstLastDigitSum");
+        System.out.println(Exercise_16_FirstLastDigitSum.sumFirstAndLastDigit(101));
+        System.out.println(Exercise_16_FirstLastDigitSum.sumFirstAndLastDigit(1257));
+        System.out.println(Exercise_16_FirstLastDigitSum.sumFirstAndLastDigit(0));
+        System.out.println(Exercise_16_FirstLastDigitSum.sumFirstAndLastDigit(5));
+        System.out.println(Exercise_16_FirstLastDigitSum.sumFirstAndLastDigit(-252));
+
+
+        //EXERCISE 17: EvenDigitSum
+        System.out.println("\nEXERCISE 17: EvenDigitSum");
+        System.out.println(Exercise_17_EvenDigitSum.getEvenDigitSum(123456789));
+        System.out.println(Exercise_17_EvenDigitSum.getEvenDigitSum(252));
+        System.out.println(Exercise_17_EvenDigitSum.getEvenDigitSum(-22));
+
+
+        //EXERCISE 18: SharedDigit
+        System.out.println("\nEXERCISE 18: SharedDigit");
+        System.out.println(Exercise_18_SharedDigit.hasSharedDigit(12, 23));
+        System.out.println(Exercise_18_SharedDigit.hasSharedDigit(9, 99));
+        System.out.println(Exercise_18_SharedDigit.hasSharedDigit(15, 55));
+
     }
 }
