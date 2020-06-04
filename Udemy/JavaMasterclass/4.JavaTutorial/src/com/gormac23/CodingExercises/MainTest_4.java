@@ -1,7 +1,7 @@
 package com.gormac23.CodingExercises;
 
 // USING ONE SINGLE MAIN CLASS TO TEST ALL CODING EXERCISES FOR 4.JAVATUTORIAL
-public class MainTest {
+public class MainTest_4 {
 
     public static void main(String[] args) {
 
