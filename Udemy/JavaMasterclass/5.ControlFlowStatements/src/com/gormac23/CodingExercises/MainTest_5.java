@@ -65,5 +65,52 @@ public class MainTest_5 {
         System.out.println(Exercise_18_SharedDigit.hasSharedDigit(9, 99));
         System.out.println(Exercise_18_SharedDigit.hasSharedDigit(15, 55));
 
+
+        //EXERCISE 19: LastDigitChecker
+        System.out.println("\nEXERCISE 19: LastDigitChecker");
+        System.out.println(Exercise_19_LastDigitChecker.hasSameLastDigit(41, 22, 71));
+        System.out.println(Exercise_19_LastDigitChecker.hasSameLastDigit(23, 32, 42));
+        System.out.println(Exercise_19_LastDigitChecker.hasSameLastDigit(9, 99, 999));
+        System.out.println(Exercise_19_LastDigitChecker.isValid(10));
+        System.out.println(Exercise_19_LastDigitChecker.isValid(468));
+        System.out.println(Exercise_19_LastDigitChecker.isValid(1051));
+
+
+        //EXERCISE 20: GreatestCommonDivisor
+        System.out.println("\nEXERCISE 20: GreatestCommonDivisor");
+        System.out.println(Exercise_20_GreatestCommonDivisor.getGreatestCommonDivisor(25, 15));
+        System.out.println(Exercise_20_GreatestCommonDivisor.getGreatestCommonDivisor(12, 30));
+        System.out.println(Exercise_20_GreatestCommonDivisor.getGreatestCommonDivisor(9, 18));
+        System.out.println(Exercise_20_GreatestCommonDivisor.getGreatestCommonDivisor(81, 153));
+
+
+        //EXERCISE 21: FactorPrinter
+        System.out.println("\nEXERCISE 21: FactorPrinter");
+        Exercise_21_FactorPrinter.printFactors(6);
+        Exercise_21_FactorPrinter.printFactors(32);
+        Exercise_21_FactorPrinter.printFactors(10);
+        Exercise_21_FactorPrinter.printFactors(-1);
+
+        //EXERCISE 22: PerfectNumber
+        System.out.println("\nEXERCISE 22: PerfectNumber");
+        System.out.println(Exercise_22_PerfectNumber.isPerfectNumber(6));
+        System.out.println(Exercise_22_PerfectNumber.isPerfectNumber(28));
+        System.out.println(Exercise_22_PerfectNumber.isPerfectNumber(5));
+
+
+        //EXERCISE 23: NumberToWords
+        System.out.println("\nEXERCISE 23: NumberToWords");
+        System.out.println(Exercise_23_NumberToWords.getDigitCount(0));
+        System.out.println(Exercise_23_NumberToWords.getDigitCount(123));
+        System.out.println(Exercise_23_NumberToWords.getDigitCount(-123));
+        System.out.println(Exercise_23_NumberToWords.getDigitCount(5200));
+        System.out.println(Exercise_23_NumberToWords.reverse(0));
+        System.out.println(Exercise_23_NumberToWords.reverse(1212));
+        System.out.println(Exercise_23_NumberToWords.reverse(1234));
+        System.out.println(Exercise_23_NumberToWords.reverse(100));
+        Exercise_23_NumberToWords.numberToWords(0);
+        Exercise_23_NumberToWords.numberToWords(1010);
+        Exercise_23_NumberToWords.numberToWords(1000);
+        Exercise_23_NumberToWords.numberToWords(-12);
     }
 }
