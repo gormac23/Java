@@ -8,7 +8,7 @@ public class MainTest_5 {
         //EXERCISE 12: NumberInWord
         System.out.println("EXERCISE 12: NumberInWord");
         int i = 0;
-        while(i <= 10) {
+        while (i <= 10) {
             Exercise_12_NumberInWord.printNumberInWord(i);
             i += 1;
         }
@@ -112,5 +112,32 @@ public class MainTest_5 {
         Exercise_23_NumberToWords.numberToWords(1010);
         Exercise_23_NumberToWords.numberToWords(1000);
         Exercise_23_NumberToWords.numberToWords(-12);
+
+
+        //EXERCISE 24: FlourPacker
+        System.out.println("\nEXERCISE 24: FlourPacker");
+        System.out.println(Exercise_24_FlourPacker.canPack(1, 0, 4));
+        System.out.println(Exercise_24_FlourPacker.canPack(1, 0, 5));
+        System.out.println(Exercise_24_FlourPacker.canPack(0, 5, 4));
+        System.out.println(Exercise_24_FlourPacker.canPack(2, 2, 11));
+        System.out.println(Exercise_24_FlourPacker.canPack(-3, 2, 12));
+
+
+        //EXERCISE 25: LargestPrime
+        System.out.println("\nEXERCISE 25: LargestPrime");
+        System.out.println(Exercise_25_LargestPrime.getLargestPrime(21));
+        System.out.println(Exercise_25_LargestPrime.getLargestPrime(217));
+        System.out.println(Exercise_25_LargestPrime.getLargestPrime(0));
+        System.out.println(Exercise_25_LargestPrime.getLargestPrime(45));
+        System.out.println(Exercise_25_LargestPrime.getLargestPrime(-1));
+
+
+        //EXERCISE 26: DiagonalStar
+        System.out.println("\nEXERCISE 26: DiagonalStar");
+        Exercise_26_DiagonalStar.printSquareStar(5);
+        System.out.println("\n");
+        Exercise_26_DiagonalStar.printSquareStar(2);
+
+
     }
 }
