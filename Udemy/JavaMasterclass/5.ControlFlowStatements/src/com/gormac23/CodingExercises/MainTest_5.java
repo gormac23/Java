@@ -136,7 +136,24 @@ public class MainTest_5 {
         System.out.println("\nEXERCISE 26: DiagonalStar");
         Exercise_26_DiagonalStar.printSquareStar(5);
         System.out.println("\n");
-        Exercise_26_DiagonalStar.printSquareStar(2);
+        Exercise_26_DiagonalStar.printSquareStar(8);
+
+
+        //EXERCISE 27: InputCalculator
+        System.out.println("\nEXERCISE 27: InputCalculator");
+        System.out.println("**Commented out tests as they require user input**");
+        //Exercise_27_InputCalculator.inputThenPrintSumAndAverage();
+
+
+        //EXERCISE 28: PaintJob
+        System.out.println("\nEXERCISE 28: PaintJob");
+        System.out.println(Exercise_28_PaintJob.getBucketCount(3.4,2.1,1.5,2));
+        System.out.println(Exercise_28_PaintJob.getBucketCount(2.75,3.25,2.5,1));
+        System.out.println(Exercise_28_PaintJob.getBucketCount(3.4, 2.1, 1.5));
+        System.out.println(Exercise_28_PaintJob.getBucketCount(7.25, 4.3, 2.35));
+        System.out.println(Exercise_28_PaintJob.getBucketCount(3.4, 1.5));
+        System.out.println(Exercise_28_PaintJob.getBucketCount(6.26, 2.2));
+
 
 
     }
