@@ -40,7 +40,7 @@ public class Exercise_32_Point {
         return Math.sqrt((Math.pow(x - this.x,2)) + (Math.pow(y - this.y, 2)));
     }
 
-    public double distance(Point other) {
+    public double distance(Exercise_32_Point other) {
         return distance(other.x, other.y);
     }
 }
