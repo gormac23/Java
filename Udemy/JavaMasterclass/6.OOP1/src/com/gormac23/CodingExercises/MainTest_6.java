@@ -1,7 +1,5 @@
 package com.gormac23.CodingExercises;
 
-import java.awt.*;
-
 // USING ONE SINGLE MAIN CLASS TO TEST ALL CODING EXERCISES FOR 6.OOP
 public class MainTest_6 {
 
@@ -40,13 +38,44 @@ public class MainTest_6 {
         System.out.println("Area = " + wall.getArea());
 
 
-        //EXERCISE 31: Point
+        //EXERCISE 32: Point
         System.out.println("\nEXERCISE 31: Point");
         Exercise_32_Point first = new Exercise_32_Point(6, 5);
         Exercise_32_Point second = new Exercise_32_Point(3, 1);
         System.out.println("Dst(0,0) = " + first.distance());
         System.out.println("dst(second) = " + first.distance(second));
 
+
+        //EXERCISE 33: Carpet
+        System.out.println("\nEXERCISE 33: Carpet");
+        Exercise_33_Carpet carpet = new Exercise_33_Carpet(3.5);
+        Exercise_33_Floor floor = new Exercise_33_Floor(2.75, 4.0);
+        Exercise_33_Calculator carpetCalculator = new Exercise_33_Calculator(floor, carpet);
+        System.out.println("total = " + carpetCalculator.getTotalCost());
+
+
+        //EXERCISE 34: ComplexNumber
+        System.out.println("\nEXERCISE 34: Exercise_34_ComplexNumber");
+        Exercise_34_ComplexNumber one = new Exercise_34_ComplexNumber(1.0, 1.0);
+        Exercise_34_ComplexNumber number = new Exercise_34_ComplexNumber(2.5, -1.5);
+        one.add(1,1);
+        System.out.println("one.real = " + one.getReal());
+        System.out.println("one.imaginary = " + one.getImaginary());
+        one.subtract(number);
+        System.out.println("one.real = " + one.getReal());
+        System.out.println("one.imaginary = " + one.getImaginary());
+
+
+        //EXERCISE 35: Cylinder
+        System.out.println("\nEXERCISE 34: Exercise_35_Cylinder");
+        Exercise_35_Circle circle = new Exercise_35_Circle(3.75);
+        System.out.println("circle.radius = " + circle.getRadius());
+        System.out.println("circle.area= " + circle.getArea());
+        Exercise_35_Cylinder cylinder = new Exercise_35_Cylinder(5.55, 7.25);
+        System.out.println("Cylinder.radius + " + cylinder.getRadius());
+        System.out.println("Cylinder.height + " + cylinder.getHeight());
+        System.out.println("Cylinder.area + " + cylinder.getArea());
+        System.out.println("Cylinder.volume + " + cylinder.getVolume());
 
 
 
