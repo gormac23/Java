@@ -66,16 +66,19 @@ public class MainTest_6 {
         System.out.println("one.imaginary = " + one.getImaginary());
 
 
-        //EXERCISE 35: Cylinder
-        System.out.println("\nEXERCISE 34: Exercise_35_Cylinder");
-        Exercise_35_Circle circle = new Exercise_35_Circle(3.75);
-        System.out.println("circle.radius = " + circle.getRadius());
-        System.out.println("circle.area= " + circle.getArea());
-        Exercise_35_Cylinder cylinder = new Exercise_35_Cylinder(5.55, 7.25);
-        System.out.println("Cylinder.radius + " + cylinder.getRadius());
-        System.out.println("Cylinder.height + " + cylinder.getHeight());
-        System.out.println("Cylinder.area + " + cylinder.getArea());
-        System.out.println("Cylinder.volume + " + cylinder.getVolume());
+        //EXERCISE 36: PoolArea
+        System.out.println("\nEXERCISE 34: Exercise_36_PoolArea");
+        Exercise_36_Rectangle exercise36Rectangle = new Exercise_36_Rectangle(5, 10);
+        System.out.println("exercise36Rectangle.width = " + exercise36Rectangle.getWidth());
+        System.out.println("exercise36Rectangle.length = " + exercise36Rectangle.getLength());
+        System.out.println("exercise36Rectangle.area = " + exercise36Rectangle.getArea());
+        Exercise_36_Cuboid exercise36Cuboid = new Exercise_36_Cuboid(5, 10, 5);
+        System.out.println("exercise36Cuboid.width + " + exercise36Cuboid.getWidth());
+        System.out.println("exercise36Cuboid.length + " + exercise36Cuboid.getLength());
+        System.out.println("exercise36Cuboid.area + " + exercise36Cuboid.getArea());
+        System.out.println("exercise36Cuboid.height + " + exercise36Cuboid.getHeight());
+        System.out.println("exercise36Cuboid.volume + " + exercise36Cuboid.getVolume());
+
 
 
 
