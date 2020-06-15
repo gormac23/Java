@@ -25,14 +25,17 @@ class House {   // creating class
   public void setColour(String colour) {    // Setter. Like Getter. Public method used
     this.colour = colour;                   // to set the variables.
   }                                         // Getters & Setters are examples of Encapsulation
+
 }  
   
 public class Main {
 
   public static void main(String[] args) {
+  
     House blueHouse = new House("blue");    // How to create new object of type House using our House class
-    House anotherHouse = blueHouse;         // We used new to create a new instance but for anotherHouse, we just
-                                            // referenced blueHouse. So the two difference objects reference the same address
-  }
+    House anotherHouse = blueHouse;         // We used new to create a new instance but for anotherHouse,
+                                            // we just referenced blueHouse. So the two difference objects
+  }                                         // reference the same address
+
 }
 ```
