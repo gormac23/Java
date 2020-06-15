@@ -9,18 +9,18 @@ pass **references** as **parameters** to **constructors** and **methods**
 \
 ### Code Example
 ```java
-class House {
+class House {   // creating class
   
-  private String colour;
+  private String colour;    // Field variable. Should be private
   
-  public House(String colour) {
-    this.colour = colour;
+  public House(String colour) {   // Constructor. Has same as class.
+    this.colour = colour;         // There can be multiple Constructors in a class
   }
   
-  public String getColour() {
-    return colour;
+  public String getColour() {   // Getter. Is a public method used to 'get' the
+    return colour;              // field variables of the class
   }
   
-  publi void setColour(String colour) {
-    this.colour = colour;
-  }
+  public void setColour(String colour) {    // Setter. Like Getter. Public method used
+    this.colour = colour;                   // to set the variables.
+  }                                         // Getters & Setters are examples of Encapsulation
