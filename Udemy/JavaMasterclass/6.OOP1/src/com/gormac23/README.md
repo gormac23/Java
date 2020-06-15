@@ -15,7 +15,8 @@ class House {   // creating class
   
   public House(String colour) {   // Constructor. Has same as class.
     this.colour = colour;         // There can be multiple Constructors in a class
-  }
+  }                               // colour is the reference to the parameter passed
+                                  // this. is a reference to the field variable with the same name
   
   public String getColour() {   // Getter. Is a public method used to 'get' the
     return colour;              // field variables of the class
@@ -24,3 +25,14 @@ class House {   // creating class
   public void setColour(String colour) {    // Setter. Like Getter. Public method used
     this.colour = colour;                   // to set the variables.
   }                                         // Getters & Setters are examples of Encapsulation
+}  
+  
+public class Main {
+
+  public static void main(String[] args) {
+    House blueHouse = new House("blue");    // How to create new object of type House using our House class
+    House anotherHouse = blueHouse;         // We used new to create a new instance but for anotherHouse, we just
+                                            // referenced blueHouse. So the two difference objects reference the same address
+  }
+}
+```
