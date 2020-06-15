@@ -6,3 +6,21 @@
 - A **reference** is like the house address. There is only one address for every house, like there is one *reference* for every *object*.
 You can write the address on another piece of paper (creating a new variable), but the address is still the same. We can
 pass **references** as **parameters** to **constructors** and **methods** 
+\
+### Code Example
+```java
+class House {
+  
+  private String colour;
+  
+  public House(String colour) {
+    this.colour = colour;
+  }
+  
+  public String getColour() {
+    return colour;
+  }
+  
+  publi void setColour(String colour) {
+    this.colour = colour;
+  }
