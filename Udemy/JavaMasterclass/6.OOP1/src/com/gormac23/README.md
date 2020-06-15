@@ -40,12 +40,14 @@ public class Main {
 }
 ```
 \
+\
+\
 
 ### this vs super
 - **super** is used to access/call the parent class members (variables and methods)
 - **this** is used to call the current class memebers (variables and methods). This is required when
 we have the same anme as an instance variable (see code above using `this.colour`)
-- **NOTE:** They can be used anywhere in a class except in **static** areas
+- **NOTE:** **super** and **this** can be used anywhere in a class except in **static** areas
 ```java
 class Animal {    // another class example
 
