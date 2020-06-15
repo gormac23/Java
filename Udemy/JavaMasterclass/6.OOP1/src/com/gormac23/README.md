@@ -42,7 +42,6 @@ public class Main {
 \
 \
 \
-
 ### this vs super
 - **super** is used to access/call the parent class members (variables and methods)
 - **this** is used to call the current class memebers (variables and methods). This is required when
