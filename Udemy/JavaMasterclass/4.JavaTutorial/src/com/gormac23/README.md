@@ -1,5 +1,5 @@
-# Section 4: Java Tutorial: Expressions, Statements, Code
-blocks, Methods and more
+# Section 4: Java Tutorial:
+## Expressions, Statements, Code blocks, Methods and more
 \
 In this section,I moved more into coding with java by learning to use methods and code blocks inside if else statements.
 Now that I am begining to code in Java, I was introduced to Coding Exercises which I put into its own seperate folder
