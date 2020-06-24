@@ -90,4 +90,36 @@ class MercedesBenz extends NewCar {
 
 
 public class PolymorphismChallenge {
+
+    public static void main(String[] args) {
+        for(int i = 1; i<11; i++) {
+            NewCar car = randomCar();
+            System.out.println("Car #" + i +
+                    " : " + car.getName());
+            System.out.println("\nCylinders : " + car.getCylinders());
+            System.out.print("\nStart Engine : ");
+            car.startEngine();
+            System.out.print("\nAccelerate: ");
+            car.accelerate(60);
+            System.out.print("\nStop : ");
+            car.stop();
+            System.out.println("\n##########################\n");
+        }
+
+    }
+
+    public static NewCar randomCar() {
+        int randomNum = (int) (Math.random() * 3) + 1;
+        System.out.println("Random number generated was: " + randomNum);
+        switch (randomNum) {
+            case 1:
+                return new Audi();
+            case 2:
+                return new Ford();
+            case 3:
+                return new MercedesBenz();
+        }
+
+        return null;
+    }
 }
