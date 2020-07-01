@@ -29,6 +29,8 @@ package com.gormac23;
 // For the two additional classes this may require you to be looking at the base class for pricing and then
 // adding totals to final price.
 
+import java.util.Scanner;
+
 public class MasterChallenge {
 }
 
@@ -43,6 +45,40 @@ class Hamburger {
         this.breadRoll = breadRoll;
         this.meat = meat;
         this.price = price;
+    }
+
+    public void addExtra() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Do you want extras? Y or N");
+        String input = scanner.nextLine().toLowerCase();
+
+        while(input == "y") {
+            System.out.println("What would you like? (Pick one at a time)\n" +
+                                "Lettuce, bacon, cheese tomato");
+
+            String extra = scanner.nextLine().toLowerCase();
+            switch (extra) {
+                case "lettuce":
+                    this.price += 0.5;
+                    this.name += "lettuce ";
+                case "bacon":
+                    this.price += 1.0;
+                    this.name += "bacon ";
+                case "cheese":
+                    this.price += 0.5;
+                    this.name += "cheese ";
+                case "tomato":
+                    this.price += 0.5;
+                    this.name += "tomato ";
+
+            }
+
+            System.out.println("Would you like to add another topping? Y or N");
+            input = scanner.nextLine().toLowerCase();
+        }
+
+
     }
 }
 
