@@ -79,7 +79,7 @@ class Hamburger {
 
     public void addExtra(String topping) {
         topping = topping.toLowerCase();
-        if(extras < 5) {
+        if(this.extras < 4) {
             switch (topping) {
                 case "lettuce":
                     System.out.println("Adding lettuce to your " + this.name);
@@ -92,7 +92,7 @@ class Hamburger {
                     this.additionals += "Bcn ... 1.00\n";
                     break;
                 case "tomato":
-                    System.out.println("Adding bacon to your " + this.name);
+                    System.out.println("Adding tomato to your " + this.name);
                     this.extraCost += 0.5;
                     this.additionals += "Tmt ... 0.50\n";
                     break;
@@ -104,9 +104,10 @@ class Hamburger {
                 default:
                     System.out.println("Topping not available, please chose from: \n" +
                             "lettuce, bacon, tomato, or cheese");
+                    this.extras --;
                     break;
             }
-            extras ++;
+            this.extras ++;
         } else {
             System.out.println("No more toppings allowed");
         }
@@ -128,7 +129,7 @@ class HealthyBurger extends Hamburger {
 
     @Override
     public void addExtra(String topping) {
-        extras = 2;
+        this.extras ++; // to only allow 2 toppings
         super.addExtra(topping);
         System.out.println("Only two toppings allowed with Healthy Burger");
     }
@@ -137,13 +138,13 @@ class HealthyBurger extends Hamburger {
 class DeluxeBurger extends Hamburger {
 
     public DeluxeBurger(String breadRoll, String meat) {
-        super("DeluxeBurger", breadRoll, meat, 10.00);
+        super("Deluxe", breadRoll, meat, 10.00);
         super.additionals += "Drk ... 0.00\n" +
                              "Chp ... 0.00\n";
     }
 
     @Override
     public void addExtra(String topping) {
-        System.out.println("No toppings allowed with DeluxeBurger Burger");;
+        System.out.println("No toppings allowed with Deluxe Burger");;
     }
 }
