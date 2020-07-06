@@ -20,7 +20,7 @@ package com.gormac23;
 // hint:  you probably want to process the two additional items in this new class (subclass of Hamburger),
 // not the base class (Hamburger), since the two additions are only appropriate for this new class
 // (in other words new burger type).
-// b) Deluxe hamburger - comes with chips and drinks as additions, but no extra additions are allowed.
+// b) DeluxeBurger hamburger - comes with chips and drinks as additions, but no extra additions are allowed.
 // hint:  You have to find a way to automatically add these new additions at the time the deluxe burger
 // object is created, and then prevent other additions being made.
 //  All 3 classes should have a method that can be called anytime to show the base price of the hamburger
@@ -29,67 +29,121 @@ package com.gormac23;
 // For the two additional classes this may require you to be looking at the base class for pricing and then
 // adding totals to final price.
 
-import java.util.Scanner;
-
 public class MasterChallenge {
+
+    public static void main(String[] args) {
+        Hamburger burger = new Hamburger("Plain", "White", "Beef", 4.0);
+        burger.addExtra("lettuce");
+        burger.addExtra("bacon");
+        burger.addExtra("cheese");
+        burger.addExtra("lettuce");
+        burger.addExtra("tomato");
+        burger.showPrice();
+
+        System.out.println("\n##################\n");
+
+        HealthyBurger healthy = new HealthyBurger("Quorn");
+        healthy.addExtra("cheese");
+        healthy.addExtra("lettuce");
+        healthy.addExtra("tomato");
+        healthy.showPrice();
+
+        System.out.println("\n##################\n");
+
+        DeluxeBurger deluxe = new DeluxeBurger("Seeded Bread", "Chicken");
+        deluxe.addExtra("Cheese");
+        deluxe.showPrice();
+    }
 }
 
 class Hamburger {
     private String name;
     private String breadRoll;
     private String meat;
-    private double price;
+    private double basePrice;
 
-    public Hamburger(String name, String breadRoll, String meat, double price) {
+    protected String additionals;
+    private double extraCost;
+    protected int extras = 0;
+
+    public Hamburger(String name, String breadRoll, String meat, double basePrice) {
         this.name = name;
         this.breadRoll = breadRoll;
         this.meat = meat;
-        this.price = price;
+        this.basePrice = basePrice;
+        this.additionals = "";
+
+        System.out.println("Ordering a " + this.name + " Burger w/ " + this.breadRoll +
+                            ", " + this.meat);
     }
 
-    public void addExtra() {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Do you want extras? Y or N");
-        String input = scanner.nextLine().toLowerCase();
-
-        while(input == "y") {
-            System.out.println("What would you like? (Pick one at a time)\n" +
-                                "Lettuce, bacon, cheese tomato");
-
-            String extra = scanner.nextLine().toLowerCase();
-            switch (extra) {
+    public void addExtra(String topping) {
+        topping = topping.toLowerCase();
+        if(extras < 5) {
+            switch (topping) {
                 case "lettuce":
-                    this.price += 0.5;
-                    this.name += "lettuce ";
+                    System.out.println("Adding lettuce to your " + this.name);
+                    this.extraCost += 0.5;
+                    this.additionals += "Ltc ... 0.50\n";
+                    break;
                 case "bacon":
-                    this.price += 1.0;
-                    this.name += "bacon ";
-                case "cheese":
-                    this.price += 0.5;
-                    this.name += "cheese ";
+                    System.out.println("Adding bacon to your " + this.name);
+                    this.extraCost += 1.0;
+                    this.additionals += "Bcn ... 1.00\n";
+                    break;
                 case "tomato":
-                    this.price += 0.5;
-                    this.name += "tomato ";
-
+                    System.out.println("Adding bacon to your " + this.name);
+                    this.extraCost += 0.5;
+                    this.additionals += "Tmt ... 0.50\n";
+                    break;
+                case "cheese":
+                    System.out.println("Adding cheese to your " + this.name);
+                    this.extraCost += 0.5;
+                    this.additionals += "Chs ... 0.50\n";
+                    break;
+                default:
+                    System.out.println("Topping not available, please chose from: \n" +
+                            "lettuce, bacon, tomato, or cheese");
+                    break;
             }
-
-            System.out.println("Would you like to add another topping? Y or N");
-            input = scanner.nextLine().toLowerCase();
+            extras ++;
+        } else {
+            System.out.println("No more toppings allowed");
         }
 
+    }
 
+    public void showPrice() {
+        System.out.println(this.name + " ... " + this.basePrice);
+        System.out.println(this.additionals);
+        System.out.println("Total ... " + (this.basePrice + this.extraCost));
     }
 }
 
-class Healthy extends Hamburger {
-    public Healthy(String meat) {
-        super("Healthy Burger", "Brown-rye Bread Roll", meat, 6.00);
+class HealthyBurger extends Hamburger {
+
+    public HealthyBurger(String meat) {
+        super("Healthy", "Brown-rye Bread Roll", meat, 6.00);
+    }
+
+    @Override
+    public void addExtra(String topping) {
+        extras = 2;
+        super.addExtra(topping);
+        System.out.println("Only two toppings allowed with Healthy Burger");
     }
 }
 
-class Deluxe extends Hamburger {
-    public Deluxe(String breadRoll, String meat) {
-        super("Deluxe Burger", breadRoll, meat, 10.00);
+class DeluxeBurger extends Hamburger {
+
+    public DeluxeBurger(String breadRoll, String meat) {
+        super("DeluxeBurger", breadRoll, meat, 10.00);
+        super.additionals += "Drk ... 0.00\n" +
+                             "Chp ... 0.00\n";
+    }
+
+    @Override
+    public void addExtra(String topping) {
+        System.out.println("No toppings allowed with DeluxeBurger Burger");;
     }
 }
